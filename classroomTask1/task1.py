@@ -14,6 +14,12 @@ for name in files:
     print(name)
 
 path2 = os.getcwd()
-print("origin path",path2)
-print("reverse path",path2
-[::-1])
+print("\n origin path",path2)
+print("\nreverse path",path2[::-1])
+path2 = path2.replace('/',' ')
+path2 = path2.split()
+print("\n Reverse file names:")
+for pat in path2:
+    print(pat[::-1])
+
+
